@@ -112,7 +112,8 @@ Or set a listener
 
 
 ## Contact
-email: ertugrulkaragoz12@gmail.com
+E-mail: ertugrulkaragoz12@gmail.com
+Twitter: [@ertugruIkaragoz](https://twitter.com/ertugruIkaragoz)
 
 ## License
 ```
