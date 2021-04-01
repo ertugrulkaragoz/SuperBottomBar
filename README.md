@@ -5,6 +5,20 @@
 ## GIF
 <img src="https://github.com/ertugrulkaragoz/SuperBottomBar/blob/master/GIF/superbottombar.gif"/>
 
+## Setup
+
+```gradle
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+
+dependencies {
+        implementation ''
+}
+```
 
 ## Usage
 
@@ -66,7 +80,7 @@
         app:scalePercent="" />
 ```
 
--   Get notified when `SuperBottomBar` menu item clicked by callbacks:
+-   Get notified when `SuperBottomBar` menu item clicks by callback:
 ```kotlin
         bottomBar.onItemSelected = { pos ->
             Log.e("onItemSelected", "$pos")
