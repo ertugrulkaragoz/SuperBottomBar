@@ -107,7 +107,7 @@ class SuperBottomBar @JvmOverloads constructor(
                 Color.parseColor(DEFAULT_PRESSED_COLOR)
             )
 
-            activeItem = typedArray.getInteger(R.styleable.SuperBottomBar_activeItem, DEFAULT_ACTIVE_ITEM)
+            activeItem = typedArray.getInteger(R.styleable.SuperBottomBar_initialActiveItem, DEFAULT_ACTIVE_ITEM)
 
             itemTextSize = typedArray.getDimension(R.styleable.SuperBottomBar_textSize, DEFAULT_ITEM_TEXT_SIZE)
 
