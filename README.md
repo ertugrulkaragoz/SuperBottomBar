@@ -21,7 +21,7 @@ allprojects {
 }
 
 dependencies {
-        implementation ''
+        implementation 'implementation 'com.github.ertugrulkaragoz:SuperBottomBar:0.1'
 }
 ```
 
