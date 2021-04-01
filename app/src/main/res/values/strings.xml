@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SuperBottomBar</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="radio">Radio</string>
+    <string name="library">Library</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

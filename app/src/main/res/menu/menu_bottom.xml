@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:checked="true"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/radio_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_radio_24"
+        android:title="@string/radio" />
+
+    <item
+        android:id="@+id/search_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/library_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_library_music_24"
+        android:title="@string/library" />
+
+    <item
+        android:id="@+id/profile_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/profile" />
+</menu>
