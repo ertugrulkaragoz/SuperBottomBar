@@ -90,7 +90,7 @@ dependencies {
             Log.e("onItemReselected", "$pos")
         }
 ```
-Or Set a listener
+Or set a listener
 ```kotlin 
         bottomBar.setOnItemSelectListener(object : OnItemSelectedListener {
             override fun onItemSelect(pos: Int) {
