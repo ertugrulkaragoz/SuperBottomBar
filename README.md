@@ -6,6 +6,92 @@
 <img src="https://github.com/ertugrulkaragoz/SuperBottomBar/blob/master/GIF/superbottombar.gif"/>
 
 
+## Usage
+
+-   Create `menu.xml` in the `res/menu/` resource folder:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/radio_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_radio_24"
+        android:title="@string/radio" />
+
+    <item
+        android:id="@+id/search_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search" />
+
+    <item
+        android:id="@+id/library_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_library_music_24"
+        android:title="@string/library" />
+
+    <item
+        android:id="@+id/profile_super_bottom_bar"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="@string/profile" />
+</menu>
+```
+- Add `SuperBottomBar` in your layout:
+```
+ <me.ertugrul.lib.SuperBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:menu="@menu/menu_bottom" />
+```
+-   You can customize some of the attributes:
+```
+<me.ertugrul.lib.SuperBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:menu="@menu/menu_bottom"
+        app:iconMargin=""
+        app:textSize=""
+        app:iconSize=""
+        app:initialActiveItem=""
+        app:textColor=""
+        app:backgroundColor=""
+        app:activeColor=""
+        app:passiveColor=""
+        app:pressedColor=""
+        app:animationDuration=""
+        app:scalePercent="" />
+```
+
+-   Get notified when `SuperBottomBar` menu item clicked by callbacks:
+```
+        bottomBar.onItemSelected = { pos ->
+            Log.e("onItemSelected", "$pos")
+        }
+
+        bottomBar.onItemReselected = { pos ->
+            Log.e("onItemReselected", "$pos")
+        }
+```
+Or Set a listener
+```    
+        bottomBar.setOnItemSelectListener(object : OnItemSelectedListener {
+            override fun onItemSelect(pos: Int) {
+                Log.e("selectedListener", "$pos")
+            }
+        })
+
+        bottomBar.setOnItemReselectListener(object : OnItemReselectedListener {
+            override fun onItemReselect(pos: Int) {
+                Log.e("reSelectedListener", "$pos")
+            }
+        })
+```
+
+
 ## Contact
 email: ertugrulkaragoz12@gmail.com
 
