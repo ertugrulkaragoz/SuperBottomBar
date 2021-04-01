@@ -1,7 +1,9 @@
 # SuperBottomBar
 
 ## About
-An [Android Assignment](https://github.com/arabamcom/android-assignment) for the [arabamcom](https://github.com/arabamcom) based on the principles of clean architecture. 
+
+## GIF
+<img src="https://github.com/ertugrulkaragoz/SuperBottomBar/blob/master/GIF/superbottombar.gif"/>
 
 
 ## Contact
