@@ -39,7 +39,7 @@
 </menu>
 ```
 - Add `SuperBottomBar` in your layout:
-```
+```xml
  <me.ertugrul.lib.SuperBottomBar
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -47,7 +47,7 @@
         app:menu="@menu/menu_bottom" />
 ```
 -   You can customize some of the attributes:
-```
+```xml
 <me.ertugrul.lib.SuperBottomBar
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
 ```
 
 -   Get notified when `SuperBottomBar` menu item clicked by callbacks:
-```
+```kotlin
         bottomBar.onItemSelected = { pos ->
             Log.e("onItemSelected", "$pos")
         }
@@ -77,7 +77,7 @@
         }
 ```
 Or Set a listener
-```    
+```kotlin 
         bottomBar.setOnItemSelectListener(object : OnItemSelectedListener {
             override fun onItemSelect(pos: Int) {
                 Log.e("selectedListener", "$pos")
