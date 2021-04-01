@@ -1,7 +1,7 @@
 # SuperBottomBar
 
 ## About
-Spotify like android material bottom navigation bar library
+Spotify like android material bottom navigation bar library.
 
 ## GIF
 <img src="https://github.com/ertugrulkaragoz/SuperBottomBar/blob/master/GIF/superbottombar.gif"/>
