@@ -1,6 +1,11 @@
 # SuperBottomBar
 
 ## About
+Spotify like android material bottom navigation bar library
+
+## Design Credits
+All design and inspiration credits belong to [Spotify](https://play.google.com/store/apps/details?id=com.spotify.music&hl=tr).
+
 
 ## GIF
 <img src="https://github.com/ertugrulkaragoz/SuperBottomBar/blob/master/GIF/superbottombar.gif"/>
