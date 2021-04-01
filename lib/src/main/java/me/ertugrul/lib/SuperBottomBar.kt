@@ -18,6 +18,7 @@ class SuperBottomBar @JvmOverloads constructor(
     defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
 
+    //Attributes
     private var menu: Menu? = null
 
     @ColorInt
@@ -46,6 +47,9 @@ class SuperBottomBar @JvmOverloads constructor(
 
     private var activeItem = DEFAULT_ACTIVE_ITEM
 
+    private var currentScalePercent = DEFAULT_START_SCALE
+
+    //Dynamic variables
     private var layoutWidth: Float = 0f
     private var layoutHeight: Float = 0f
 
@@ -53,9 +57,9 @@ class SuperBottomBar @JvmOverloads constructor(
     private var itemHeight: Float = 0f
 
     private var currentItemPosition: Int = 0
-    private var currentItemColor = activeColor
-    private var currentScalePercent = DEFAULT_START_SCALE
+    private var currentItemColor = passiveColor
 
+    //Paints
     private val paintBackground = Paint().apply {
         isAntiAlias = true
         style = Paint.Style.FILL
@@ -71,6 +75,7 @@ class SuperBottomBar @JvmOverloads constructor(
         isFakeBoldText = true
     }
 
+    //Listeners
     private var bottomBarItemList = mutableListOf<BottomBarItem>()
 
     private var onItemSelectedListener: OnItemSelectedListener? = null
@@ -91,7 +96,7 @@ class SuperBottomBar @JvmOverloads constructor(
         )
         try {
             tabBackgroundColor = typedArray.getColor(
-                R.styleable.SuperBottomBar_activeColor,
+                R.styleable.SuperBottomBar_backgroundColor,
                 Color.parseColor(DEFAULT_BACKGROUND_COLOR)
             )
             activeColor = typedArray.getColor(
@@ -102,6 +107,7 @@ class SuperBottomBar @JvmOverloads constructor(
                 R.styleable.SuperBottomBar_passiveColor,
                 Color.parseColor(DEFAULT_PASSIVE_COLOR)
             )
+            currentItemColor = passiveColor
             pressedColor = typedArray.getColor(
                 R.styleable.SuperBottomBar_pressedColor,
                 Color.parseColor(DEFAULT_PRESSED_COLOR)
@@ -165,6 +171,7 @@ class SuperBottomBar @JvmOverloads constructor(
     override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
 
+        paintBackground.color = tabBackgroundColor
         canvas.drawRect(
             0f, 0f,
             width.toFloat(),
