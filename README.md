@@ -23,7 +23,7 @@ allprojects {
 - Add the dependency
 ```gradle
 dependencies {
-        implementation 'com.github.ertugrulkaragoz:SuperBottomBar:0.2'
+        implementation 'com.github.ertugrulkaragoz:SuperBottomBar:0.4'
 }
 ```
 
