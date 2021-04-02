@@ -96,45 +96,45 @@ class SuperBottomBar @JvmOverloads constructor(
         )
         try {
             tabBackgroundColor = typedArray.getColor(
-                R.styleable.SuperBottomBar_backgroundColor,
+                R.styleable.SuperBottomBar_sbb_backgroundColor,
                 Color.parseColor(DEFAULT_BACKGROUND_COLOR)
             )
             activeColor = typedArray.getColor(
-                R.styleable.SuperBottomBar_activeColor,
+                R.styleable.SuperBottomBar_sbb_activeColor,
                 Color.parseColor(DEFAULT_ACTIVE_COLOR)
             )
             passiveColor = typedArray.getColor(
-                R.styleable.SuperBottomBar_passiveColor,
+                R.styleable.SuperBottomBar_sbb_passiveColor,
                 Color.parseColor(DEFAULT_PASSIVE_COLOR)
             )
             currentItemColor = passiveColor
             pressedColor = typedArray.getColor(
-                R.styleable.SuperBottomBar_pressedColor,
+                R.styleable.SuperBottomBar_sbb_pressedColor,
                 Color.parseColor(DEFAULT_PRESSED_COLOR)
             )
 
-            activeItem = typedArray.getInteger(R.styleable.SuperBottomBar_initialActiveItem, DEFAULT_ACTIVE_ITEM)
+            activeItem = typedArray.getInteger(R.styleable.SuperBottomBar_sbb_initialActiveItem, DEFAULT_ACTIVE_ITEM)
 
-            itemTextSize = typedArray.getDimension(R.styleable.SuperBottomBar_textSize, DEFAULT_ITEM_TEXT_SIZE)
+            itemTextSize = typedArray.getDimension(R.styleable.SuperBottomBar_sbb_textSize, DEFAULT_ITEM_TEXT_SIZE)
 
-            itemIconSize = typedArray.getDimension(R.styleable.SuperBottomBar_iconSize, DEFAULT_ICON_SIZE)
+            itemIconSize = typedArray.getDimension(R.styleable.SuperBottomBar_sbb_iconSize, DEFAULT_ICON_SIZE)
 
-            itemIconMargin = typedArray.getDimension(R.styleable.SuperBottomBar_iconMargin, DEFAULT_ICON_MARGIN)
+            itemIconMargin = typedArray.getDimension(R.styleable.SuperBottomBar_sbb_iconMargin, DEFAULT_ICON_MARGIN)
 
             animationDuration = typedArray.getInteger(
-                R.styleable.SuperBottomBar_animationDuration,
+                R.styleable.SuperBottomBar_sbb_animationDuration,
                 DEFAULT_ANIMATION_DURATION
             )
 
             endScale = 1 - (typedArray.getInteger(
-                R.styleable.SuperBottomBar_scalePercent,
+                R.styleable.SuperBottomBar_sbb_scalePercent,
                 DEFAULT_SCALE_PERCENT
             )).toFloat() / 100
 
             val _menu = PopupMenu(context, null).menu
             MenuInflater(context).inflate(
                 typedArray.getResourceId(
-                    R.styleable.SuperBottomBar_menu,
+                    R.styleable.SuperBottomBar_sbb_menu,
                     0
                 ), _menu
             )
