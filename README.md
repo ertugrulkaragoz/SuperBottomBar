@@ -65,7 +65,7 @@ dependencies {
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        app:menu="@menu/menu_bottom" />
+        app:sbb_menu="@menu/menu_bottom" />
 ```
 -   You can customize some of the attributes:
 ```xml
@@ -74,17 +74,17 @@ dependencies {
         android:layout_width="match_parent"
         android:layout_height="55dp"
         app:menu="@menu/menu_bottom"
-        app:iconMargin=""
-        app:textSize=""
-        app:iconSize=""
-        app:initialActiveItem=""
-        app:textColor=""
-        app:backgroundColor=""
-        app:activeColor=""
-        app:passiveColor=""
-        app:pressedColor=""
-        app:animationDuration=""
-        app:scalePercent="" />
+        app:sbb_iconMargin=""
+        app:sbb_textSize=""
+        app:sbb_iconSize=""
+        app:sbb_initialActiveItem=""
+        app:sbb_textColor=""
+        app:sbb_backgroundColor=""
+        app:sbb_activeColor=""
+        app:sbb_passiveColor=""
+        app:sbb_pressedColor=""
+        app:sbb_animationDuration=""
+        app:sbb_scalePercent="" />
 ```
 
 -   Get notified when `SuperBottomBar` menu item clicks by callback:
