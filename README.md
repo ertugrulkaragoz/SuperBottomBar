@@ -11,7 +11,7 @@ All design and inspiration credits belong to [Spotify](https://play.google.com/s
 
 
 ## Setup
-
+- Add it in your root build.gradle at the end of repositories:
 ```gradle
 allprojects {
 	repositories {
@@ -19,7 +19,9 @@ allprojects {
 		maven { url 'https://jitpack.io' }
 	}
 }
-
+```
+- Add the dependency
+```gradle
 dependencies {
         implementation 'com.github.ertugrulkaragoz:SuperBottomBar:0.2'
 }
@@ -111,7 +113,7 @@ Or set a listener
 ```
 
 
-## Contact
+
 - E-mail: ertugrulkaragoz12@gmail.com
 - Twitter: [@ertugruIkaragoz](https://twitter.com/ertugruIkaragoz)
 
