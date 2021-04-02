@@ -73,7 +73,7 @@ dependencies {
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        app:menu="@menu/menu_bottom"
+        app:sbb_menu="@menu/menu_bottom"
         app:sbb_iconMargin=""
         app:sbb_textSize=""
         app:sbb_iconSize=""
